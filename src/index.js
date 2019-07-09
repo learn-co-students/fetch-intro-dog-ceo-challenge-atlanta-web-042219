@@ -51,8 +51,7 @@ function change_color(e) {
 // CHALLENGE 4
 
 function filter_doggers(e) {
-	let ul = document.querySelector('#dog-breeds')
-	let list_items = ul.children
+	let list_items = document.querySelector('#dog-breeds').children
 
 	for(let k=0; k<list_items.length; k++){
 		list_items[k].hidden = ( list_items[k].innerText[0] === e.target.value ? false : true )
